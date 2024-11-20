@@ -4,11 +4,30 @@
             Programming exercises
         </title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            function display_name() {
+                fname = document.getElementById("fname").value
+                last_name = document.getElementById("lname").value
+                // console.log(fname)
+                // console.log(last_name)
+                document.getElementById("bb").innerHTML = "Hello" + " " + fname + " " + last_name + "!"
+            }
+        </script>
     </head>
     <body>
         <h1 class="my_title">Programming Exercises</h1>
         <p class="menu">
             <a href="index.html">Home</a> | <a href="programming.html">Programming</a>
         </p>
+        <button type="button" onclick="document.getElementById('b').innerHTML = Date()">
+            Click me to display Date and Time.
+        </button>
+        <p id="b">Hello</p>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <button onclick="display_name()">Display name</button>
+        <p id="bb">Hello</p>
     </body>
 </html>
