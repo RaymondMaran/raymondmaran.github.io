@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function display_name() {
+                x = document.getElementById("x").value
+                y = document.getElementById("y").value
+                // console.log(fname)
+                // console.log(last_name)
+                document.getElementById("bb").innerHTML = "Hello" + " " + x + " " + y + "!"
+            }
+        </script>
+    </head>
+    <body>
+        <h1 class="my_title">calculator</h1>
+        <p class="menu">
+            <a href="index.html">Home</a> |
+            <a href="programming.html">Programming</a> |
+            <a href="calculator.html">Calculator</a> |
+        </p>
+        
+        
+        <label for="x">x:</label><br>
+        <input type="text" id="x" name="x" value=""><br>
+        <label for="y">y:</label><br>
+        <input type="text" id="y" name="y" value=""><br><br>
+        <button onclick="display_name()">add</button>
+        <p id="bb">Hello</p>
+        <p> &#82;&#97;&#121;&#109;&#111;&#110;&#100;</p>
+    </body>
+</html>
