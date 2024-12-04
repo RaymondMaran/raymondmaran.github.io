@@ -5,12 +5,59 @@
         </title>
         <link rel="stylesheet" href="styles.css">
         <script>
-            function display_name() {
+            function add() {
                 x = document.getElementById("x").value
                 y = document.getElementById("y").value
-                // console.log(fname)
-                // console.log(last_name)
-                document.getElementById("bb").innerHTML = "Hello" + " " + x + " " + y + "!"
+                x = parseInt(x)
+                y = parseInt(y)
+                // console.log(typeof x) 
+                answer = x + y
+                document.getElementById("answer").innerHTML = answer
+            }
+            function subtract() {
+                x = document.getElementById("x").value
+                y = document.getElementById("y").value
+                x = parseInt(x)
+                y = parseInt(y)
+                // console.log(typeof x) 
+                answer = x - y
+                document.getElementById("answer").innerHTML = answer
+            }
+            function multiply() {
+                x = document.getElementById("x").value
+                y = document.getElementById("y").value
+                x = parseInt(x)
+                y = parseInt(y)
+                // console.log(typeof x) 
+                answer = x * y
+                document.getElementById("answer").innerHTML = answer
+            }
+            function divide() {
+                x = document.getElementById("x").value
+                y = document.getElementById("y").value
+                x = parseInt(x)
+                y = parseInt(y)
+                // console.log(typeof x) 
+                answer = x / y
+                document.getElementById("answer").innerHTML = answer
+            }
+            function power() {
+                x = document.getElementById("x").value
+                y = document.getElementById("y").value
+                x = parseInt(x)
+                y = parseInt(y)
+                // console.log(typeof x) 
+                answer = x ** y
+                document.getElementById("answer").innerHTML = answer
+            }
+            function square_root() {
+                x = document.getElementById("x").value
+                y = document.getElementById("y").value
+                x = parseInt(x)
+                y = parseInt(y)
+                // console.log(typeof x) 
+                answer = Math.sqrt(x)
+                document.getElementById("answer").innerHTML = answer
             }
         </script>
     </head>
@@ -27,8 +74,13 @@
         <input type="text" id="x" name="x" value=""><br>
         <label for="y">y:</label><br>
         <input type="text" id="y" name="y" value=""><br><br>
-        <button onclick="display_name()">add</button>
-        <p id="bb">Hello</p>
+        <button onclick="add()">add</button>
+        <button onclick="subtract()">subtract</button>
+        <button onclick="multiply()">multiply</button>
+        <button onclick="divide()">divide</button>
+        <button onclick="power()">power</button>
+        <button onclick="square_root()">square root of x</button>
+        <p id="answer">answer</p>
         <p> &#82;&#97;&#121;&#109;&#111;&#110;&#100;</p>
     </body>
 </html>
